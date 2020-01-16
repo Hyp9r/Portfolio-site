@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Tomislav Keskic Personal Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/ab636ade37.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="jumbotron">
+                <nav>
+                    <ul>
+                        <li><a href="#about-me-page">Tomislav Keskic</a></li>
+                        <li><a href="#projects-page">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="desno"><a href="">Contact</a></li>
+                    </ul>
+                        
+            
+                </nav>
+                <div class="clr"></div>
+                <div class="siteMain">
+                        <h1>Tomislav Keskic</h1>
+                        <p>Engineer/Student</p>
+                        <div>
+                            <a href="https://stackoverflow.com/users/3770553/hyp9r"><i class="fab fa-stack-overflow white"></i></a>
+                            <a href="https://github.com/Hyp9r"><i class="fab fa-github-square white"></i></a>
+                            <a href="https://www.instagram.com/tomislav2807/"><i class="fab fa-instagram white"></i></a>
+                            <a href="https://www.linkedin.com/in/tomislav-keskic-32207a10b/"><i class="fab fa-linkedin white"></i></a>
+                        </div>
+                </div>
+                
+                
+        </div>
+
+        <div class="clr"></div>
+
+        <div id="about-me-page">
+            <div id="about-me-container">
+                <h1 style="padding-bottom:50px;">About me</h1>
+                <p>I'm software engineer and student that is love in technology. I love solving problems and make things work.</p>
+                <p>I'm programming for a few years now, and I started by doing game development in Java.</p>
+                <p>Gaming has gotten me into programming and I'm thenkful for that.</p>
+                <div id="skills">
+                    <div class="box">
+                        <h6>Game development</h6>
+                        <ul>
+                            <li>C++(SDL)</li>
+                            <li>Java(libgdx, Slick2D)</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <h6>Backend programming</h6>
+                        <ul>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Nodejs</li>
+                        </ul>
+                    </div>
+
+                    <div class="box">
+                        <h6>Frontend programming</h6>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>JavaFX</li>
+                            <li>Windows forms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects-page">
+            <div id="projects-container">
+                    <h1>Projects I've worked on</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="20%">Title</th>
+                                <th width="60%">Description</th>
+                                <th width="20%">Language</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#game">Rise of ancient warrior</a></td>
+                                <td>A 2D RPG game developed with the help of libgdx framework. I did stuff like collision detection. Tilemaps, and made tilemap editor, so I can more easly develop maps, load and save them into files.</td>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>Nutrifit</td>
+                                <td>A desktop app that helps you achive your nutrition goals and help you lose weight.</td>
+                                <td>C#</td>
+                            </tr>
+                            <tr>
+                                <td>Peer 2 peer DHT</td>
+                                <td>Peer to peer application that is completly decentralize. It uses DHT table and has nodes that can behave as central node to establish connections for other new peers</td>
+                                <td>Java</td>
+                            </tr>
+                            <tr>
+                                <td>Mill Game</td>
+                                <td>Mill board game developed in C++, I used SDL for my input and drawing</td>
+                                <td>C++</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="project-gallery" id="game">
+
+                        <figure class="gallery__item--1 img-hover-zoom--brightness" onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                            <div class="cardContainer">
+                                <img src="img/personal-website.png" class="gallery_img" alt="Image 1">
+                                <div class="sourceButton"><a href="https://github.com/Hyp9r/PrivateWebsite">View Source</a></div>
+                                <div class="liveButton"><a href="">Live version</a></div>
+                            </div>    
+                        </figure>
+
+                        <figure class="gallery__item--2 img-hover-zoom--brightness" onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                            <div class="cardContainer">
+                                <img src="img/game.png" class="gallery_img" alt="Image 2">
+                                <div class="sourceButton"><a href="https://github.com/Hyp9r/The-Rise-of-Ancient-Warrior">View Source</a></div>
+                                <div class="liveButton"><a href="">Live version</a></div>
+                            </div>
+                        </figure>
+
+                        <figure class="gallery__item--3 img-hover-zoom--brightness" onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                            <div class="cardContainer">
+                                <img src="img/blockchain.jpg" class="gallery_img" alt="Image 3">
+                                <div class="sourceButton"><a href="https://github.com/Hyp9r/P2P">View Source</a></div>
+                                <div class="liveButton"><a href="">Live version</a></div>
+                            </div>
+                        </figure>
+
+                        <figure class="gallery__item--4 img-hover-zoom--brightness" onmouseover="hoverEffect(this)" onmouseout="hoverOut(this)">
+                            <div class="cardContainer">
+                                <img src="img/nutrifit.png" class="gallery_img" alt="Image 4">
+                                <div class="sourceButton"><a href="https://github.com/Hyp9r/PrivateWebsite">View Source</a></div>
+                                <div class="liveButton"><a href="">Live version</a></div>
+                            </div>
+                        </figure>
+
+                    </div>
+
+                    <div id="interests">
+                        <h1>My interests</h1>
+                        <ul>
+                            <li>I really love working on game developments</li>
+                            <li>Learning about blockchain</li>
+                            <li>Web development</li>
+                            <li>Networking</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+
+
+    </div>
+<script src="js/file.js"></script>
+</body>
+
+</html>

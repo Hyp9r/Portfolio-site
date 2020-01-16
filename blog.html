@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab636ade37.js"></script>
+    <title>Tomislav Keskic Blog</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="##">Tomislav Keskic<i class="fas fa-terminal" style="padding-left: 20px;"></i></a></li>
+            <li><a href="##">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Java</a></li>
+            <li class="desno" onmouseover="searchIconHover(this)"><i class="fas fa-search"></i></li>
+        </ul>
+    </nav>
+    <div id="post-page">
+        <div id="post-container">
+            <div class="posts-gallery">
+                <figure class="gallery__item--1 img-hover-zoom--brightness" onmousedown="clickedOnPost(this)">
+                    <div class="cardContainer">
+                        <img src="img/C.png" class="gallery_img" alt="Image 1">
+                        <div class="category">
+                                <h6>C++</h6>
+                                <p>September 23, 2019</p>
+                                <h2>What are Pointers and how do they work?</h2>
+                                <a href="index.html"></a>
+                        </div>
+                    </div>    
+                </figure>
+                <figure class="gallery__item--2 img-hover-zoom--brightness" onmousedown="clickedOnPost(this)">
+                    <div class="cardContainer">
+                        <img src="img/java-performance-2.png" class="gallery_img" alt="Image 1">
+                        <div class="category">
+                            <h6>Java</h6>
+                            <p>September 23, 2019</p>
+                            <h2>How Garbage Collector works in Java</h2>
+                            <a href="index.html"></a>
+                        </div>
+                    </div>    
+                </figure>
+            </div>
+        </div>
+    </div>
+<script src="js/blog.js"></script>
+</body>
+</html>

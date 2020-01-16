@@ -1,0 +1,267 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+    padding: 10px 25px;
+}
+
+nav li a{
+    text-decoration: none;
+    text-emphasis: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+nav li a:hover{
+    border-bottom: 3px solid #F57F17;
+}
+
+nav{
+    margin: 0 200px;;
+}
+
+.clr{
+    clear:both;
+}
+
+#jumbotron{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/tomo.JPG");
+    background-size: cover;
+    background-position: top;
+    height: 730px;
+    width: 100%;
+    overflow: visible;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.siteMain{
+    text-align: center;
+    margin-top: 370px;
+    color: white;
+}
+
+.siteMain h1{
+    margin-bottom: 0;
+    letter-spacing: 0.5em;
+}
+
+.siteMain p{
+    margin: 0;
+    padding-bottom: 15px;
+    letter-spacing: 0.3em;
+}
+
+.white{
+    color:white;
+    letter-spacing: 0.4em;
+}
+
+.desno{
+    float: right;
+}
+
+#about-me-page{
+    background-color: #212121;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    width:100%;
+    overflow: hidden;
+}
+
+#about-me-container{
+    margin: 100px 200px;
+}
+
+#about-me-container h1{
+    letter-spacing: 0.15em;
+    font-weight: normal;
+}
+
+#skills .box{
+    max-width: 300px;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#skills .box h6{
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    margin-right: 60px;
+    border-bottom: white 1px solid;
+}
+
+#projects-page{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    overflow: hidden;
+}
+
+#projects-container{
+    margin: 100px 200px;
+}
+
+#projects-container h1{
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#projects-container th{
+    border-top: #e9ecef 1px solid;
+    border-bottom: #e9ecef 2px solid;
+    text-align: left;
+    padding: 0.75rem;
+    font-family: 'Roboto';
+}
+
+#projects-container td{
+    padding: 0.75rem;
+    border-top: #e9ecef 1px solid;
+    line-height: 1.5;
+}
+
+#interests{
+    line-height: 2;
+    margin-top: 130px;
+}
+
+#interests h1{
+    border-bottom: #e9ecef 2px solid;
+}
+
+.project-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 0; 
+    padding-top: 90px;
+    z-index: 0;
+}
+
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 0;
+    position: relative;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    z-index: 0;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    z-index: 0;
+}
+
+.gallery__item--4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    z-index: 0;
+}
+
+.img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(100%);
+    z-index: 0;
+  }
+
+.img-hover-zoom--brightness:hover img {
+    filter: brightness(45%);
+    transform: scale(1.3);
+    overflow: visible;
+    z-index: 10;
+}
+
+.cardContainer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sourceButton{
+    position: absolute;
+    width: 500px;
+    left:0;
+    top: 80px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    z-index: 5;
+}
+
+.sourceButton a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: #3498db;
+    border: solid 2px #3498db;
+    z-index: 5;
+  }
+
+  .cardContainer:hover .sourceButton {
+    opacity: 1;
+  }
+
+  .liveButton{
+    position: absolute;
+    width: 500px;
+    left:0;
+    top: 140px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    z-index: 5;
+}
+
+.liveButton a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: #2ecc71;
+    border: solid 2px #2ecc71;
+    z-index: 5;
+  }
+
+  .cardContainer:hover .liveButton {
+    opacity: 1;
+  }
+  
